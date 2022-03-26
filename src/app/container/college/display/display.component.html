@@ -1,0 +1,44 @@
+<div  #p>
+    <div class="row justify-content-center align-items-center">
+      <div class="form-group">
+        Name <input type="text" #name><br>
+        password <input type="pasword" #password><br>
+        Choose your Institution : 
+        <select #institute>
+            <option value="HIT">HIT</option>
+            <option value="CIT">CIT</option>
+            <option value="IIT">IIT</option>
+            <option value="IEM">IEM</option>
+        </select>
+        <br>
+        Chose your designation : 
+        <select #desg>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Admin">Admin</option>
+        </select>
+        <br>
+        Choose your department : 
+        <select #dept>
+            <option value="MCA">MCA</option>
+            <option value="BTECH">BTECH</option>
+            <option value="MTECH">MTECH</option>
+            <option value="BCA">BCA</option>
+        </select>
+        <button #btn1 (click)="onClick(btn1)" >Done</button><br>
+      </div>
+    </div>
+</div>
+<h1 style="color:red;">hiiiiiiiii</h1>
+
+<div  #res>
+    <div class="row justify-content-center align-items-center">
+        <div class="form-group">
+            <p>{{name.value}}</p>
+            <p>{{institute.value}}</p>
+            <p>{{desg.value}}</p>
+            <p>{{dept.value}}</p>
+            <button #btn2 (click)="onClick2(btn2)" >log in again</button><br>
+        </div>
+    </div>
+</div>

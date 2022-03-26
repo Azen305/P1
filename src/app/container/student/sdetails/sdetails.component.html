@@ -1,0 +1,12 @@
+
+<div>
+  Name <input type="text" #name>
+  password <input type="text" #password>
+  <button (click)="onCheck(name,password)">done</button>
+</div>
+<section *ngFor="let d of res;">
+  <p>{{d.name}}</p>
+  <p>{{d.password}}</p>
+  <p>{{d.Collage}}</p>
+  <p></p>
+</section>
